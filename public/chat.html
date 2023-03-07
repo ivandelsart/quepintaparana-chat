@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Que Pinta Parana - Chat</title>
   </head>
-  <body>
+  <body class="body">
     <div class="chat-container">
       <header class="chat-header">
-        <h1></i> QuePintaParana</h1>
+        <h1></i><a class="linkReturn" href="https://quepintaparana.com/">QuePintaParana</a></h1>
         <a id="leave-btn" class="btn">Cambiar Sala</a>
       </header>
       <main class="chat-main">
@@ -25,21 +25,152 @@
           <h3><i class="fas fa-users"></i> Usuarios</h3>
           <ul id="users"></ul>
         </div>
-        <div class="chat-messages"></div>
+        <div class="chat-messages">
+                  <!-- <div class="message">
+                    <p class="meta">
+                      <span>sdfsdf</span>
+                    </p>
+                    <p class="text">
+                      mensaje
+                    </p>
+                  </div>
+
+                  <div class="message">
+                    <p class="meta">
+                      <span>sdfsdf</span>
+                    </p>
+                    <p class="text">
+                      mensaje
+                    </p>
+                  </div>
+
+                  <div class="message">
+                    <p class="meta">
+                      <span>sdfsdf</span>
+                    </p>
+                    <p class="text">
+                      mensaje
+                    </p>
+                  </div>
+                  <div class="message">
+                    <p class="meta">
+                      <span>sdfsdf</span>
+                    </p>
+                    <p class="text">
+                      mensaje
+                    </p>
+                  </div>
+                  <div class="message">
+                    <p class="meta">
+                      <span>sdfsdf</span>
+                    </p>
+                    <p class="text">
+                      mensaje
+                    </p>
+                  </div>
+                  <div class="message">
+                    <p class="meta">
+                      <span>sdfsdf</span>
+                    </p>
+                    <p class="text">
+                      mensaje
+                    </p>
+                  </div>
+                  <div class="message">
+                    <p class="meta">
+                      <span>sdfsdf</span>
+                    </p>
+                    <p class="text">
+                      mensaje
+                    </p>
+                  </div>
+                  <div class="message">
+                    <p class="meta">
+                      <span>sdfsdf</span>
+                    </p>
+                    <p class="text">
+                      mensaje
+                    </p>
+                  </div>
+
+                  <div class="message">
+                    <p class="meta">
+                      <span>sdfsdf</span>
+                    </p>
+                    <p class="text">
+                      mensaje
+                    </p>
+                  </div> -->
+
+                  <div class="message">
+                    <p class="meta">
+                      <span>sdfsdf</span>
+                    </p>
+                    <p class="text">
+                      mensaje
+                    </p>
+                  </div>
+        </div>
       </main>
       <div class="chat-form-container">
+
         <form id="chat-form">
+          <svg class="icon-input" xmlns="http://www.w3.org/2000/svg" width="20px" fill="none" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+        </svg>
+            <div class="emojis-container">
+      <span class='emoji' id="emoji">😀</span>
+      <span class='emoji' id="emoji">😄</span>
+      <span class='emoji' id="emoji">😁</span>
+      <span class='emoji' id="emoji">😂</span>
+      <span class='emoji' id="emoji">🤣</span>
+      <span class='emoji' id="emoji">😊</span>
+      <span class='emoji' id="emoji">😍</span>
+      <span class='emoji' id="emoji">🥰</span>
+      <span class='emoji' id="emoji">🤭</span>
+      <span class='emoji' id="emoji">🤷</span>
+      <span class='emoji' id="emoji">🙋‍♀️</span>
+      <span class='emoji' id="emoji">🙋</span>
+      <span class='emoji' id="emoji">🐨</span>
+      <span class='emoji' id="emoji">🐯</span>
+      <span class='emoji' id="emoji">🌿</span>
+      <span class='emoji' id="emoji">☘</span>
+      <span class='emoji' id="emoji">🍀</span>
+      <span class='emoji' id="emoji">⚡</span>
+      <span class='emoji' id="emoji">🔥</span>
+      <span class='emoji' id="emoji">💥</span>
+      <span class='emoji' id="emoji">⛈</span>
+      <span class='emoji' id="emoji">🌞</span>
+      <span class='emoji' id="emoji">🎄</span>
+      <span class='emoji' id="emoji">💏</span>
+      <span class='emoji' id="emoji">😡</span>
+      <span class='emoji' id="emoji">😔</span>
+      <span class='emoji' id="emoji">🍉</span>
+      <span class='emoji' id="emoji">🍊</span>
+      <span class='emoji' id="emoji">🏉</span>
+      <span class='emoji' id="emoji">🏊‍♂️</span>
+      <span class='emoji' id="emoji">🏄‍♀️</span>
+      <span class='emoji' id="emoji">🎯</span>
+      <span class='emoji' id="emoji">🪑</span>
+      <span class='emoji' id="emoji">👩‍🦯</span>
+    </div> 
+        
           <input
+          
             id="msg"
             type="text"
-            placeholder="Ingresa Mensaje"
+            placeholder="...enviar mensaje"
             required
             autocomplete="off"
           />
+          
           <button class="btn"><i class="fas fa-paper-plane"></i>Enviar</button>
         </form>
       </div>
     </div>
+
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"

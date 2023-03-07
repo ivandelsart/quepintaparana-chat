@@ -3,6 +3,33 @@ const chatMessages = document.querySelector('.chat-messages');
 const roomName = document.getElementById('room-name');
 const userList = document.getElementById('users');
 
+const iconInput = document.querySelector('.icon-input');
+const emojisContainer = document.querySelector('.emojis-container');
+const emoji = document.querySelectorAll('#emoji');
+const input = document.getElementById('msg');
+
+
+
+// icon emojis
+
+  iconInput.addEventListener('click', ()=>{
+    emojisContainer.classList.toggle('open-emojis-container')
+  })
+
+
+
+  for(emojis of emoji){
+      emojis.addEventListener('click', ()=>{
+        input.setAttribute('value', document.getElementById('msg').value += emojis.innerHTML);
+
+      })
+  }
+
+input.addEventListener('click', ()=>{
+  emojisContainer.classList.remove('open-emojis-container')
+})
+
+
 // Get username and room from URL
 const { username, room } = Qs.parse(location.search, {
   ignoreQueryPrefix: true,
@@ -82,7 +109,7 @@ function outputUsers(users) {
 
 //Prompt the user before leave chat room
 document.getElementById('leave-btn').addEventListener('click', () => {
-  const leaveRoom = confirm('Estas seguro que quieres abandonar el chat?');
+  const leaveRoom = confirm('Estas seguro que quieres abandonar la sala?');
   if (leaveRoom) {
     window.location = '../index.html';
   } else {
