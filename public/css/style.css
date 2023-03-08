@@ -23,7 +23,7 @@
 body {
 	font-size: 16px;
 	background: white;
-	margin: 20px;
+
 }
 
 ul {
@@ -44,30 +44,39 @@ a {
 /* Chat Page */
 
 .chat-container {
-	max-width: 1100px;
+
 	background: #fff;
-	margin: 30px auto;
+
 	overflow: hidden;
 }
 
 .chat-header {
-
+	background-color: #fff;
+	/* width: 100%; */
+	width: 100%;
+	top: 0;
+	position: fixed;
 	color: black;
 	padding: 15px;
 	display: flex;
-	align-items: center;
+
 	justify-content: space-between;
 	border-style: solid;
 	border-width: 1px;
 	border-color: rgb(212, 212, 212);
-
+	z-index: 1;
 
 	
 }
 
-.chat-main {
+.chat-main { 
+	margin-top: 70px;
 	display: grid;
 	grid-template-columns: 1fr 3fr;
+	border-style: solid;
+	border-width: 0px 1px 0px 1px;
+	border-color: rgb(212, 212, 212);
+	background-color: red;
 }
 
 .chat-sidebar {
@@ -75,6 +84,7 @@ a {
 	color: #1b1b1b;
 	padding: 20px 20px 60px;
 	overflow-y: scroll;
+	/* position: fixed; */
 	
 }
 
@@ -83,10 +93,12 @@ a {
 	background: rgba(0, 0, 0, 0.1);
 	padding: 10px;
 	margin-bottom: 20px;
+	
 }
 
 .chat-sidebar h3 {
 	margin-bottom: 15px;
+
 
 }
 #room-name{
@@ -99,9 +111,10 @@ a {
 
 .chat-messages {
 	padding: 30px;
-	height: 100%;
-	overflow-y: scroll;
+	
 
+	
+/*////////////////////////////////////////////////// //ssdfds */
 
 
 }
@@ -135,7 +148,9 @@ a {
 	border-width: 1px;
 	border-color: rgb(212, 212, 212);
 	bottom:-1px;
-	
+	position: fixed;
+	background-color:#ffffff;
+	width: 100%;
 
 }
 
@@ -186,14 +201,14 @@ svg{
 }
 .btn {
 	cursor: pointer;
-	padding: 5px 15px;
-	background: white;
-	color: black;
-	border: 0;
-	font-size: 17px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: rgb(212, 212, 212);
+		padding: 5px 15px;
+		background: white;
+		color: black;
+		border: 0;
+		font-size: 17px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: rgb(212, 212, 212);
 
 }
 
@@ -258,6 +273,7 @@ svg{
 		display: block;
 
 	}
+
 
 	.chat-sidebar {
 		background: var(--dark-color-b);
