@@ -76,7 +76,7 @@ a {
 	border-style: solid;
 	border-width: 0px 1px 0px 1px;
 	border-color: rgb(212, 212, 212);
-	background-color: red;
+
 }
 
 .chat-sidebar {
@@ -84,7 +84,8 @@ a {
 	color: #1b1b1b;
 	padding: 20px 20px 60px;
 	overflow-y: scroll;
-	/* position: fixed; */
+	height: 100vh;
+
 	
 }
 
@@ -111,6 +112,7 @@ a {
 
 .chat-messages {
 	padding: 30px;
+	scroll-margin-top: 0;
 	
 
 	
