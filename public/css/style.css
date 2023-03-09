@@ -18,11 +18,14 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Ubuntu Condensed', sans-serif;
+
 }
 
 body {
 	font-size: 16px;
 	background: white;
+	
+
 
 }
 
@@ -47,7 +50,6 @@ a {
 
 	background: #fff;
 
-	overflow: hidden;
 }
 
 .chat-header {
@@ -84,7 +86,7 @@ a {
 	color: #1b1b1b;
 	padding: 20px 20px 60px;
 	overflow-y: scroll;
-	height: 100vh;
+	height: 500px;
 
 	
 }
@@ -112,7 +114,8 @@ a {
 
 .chat-messages {
 	padding: 30px;
-	scroll-margin-top: 0;
+	margin-bottom: 60px;
+	overflow-y: scroll;
 	
 
 	
@@ -185,13 +188,14 @@ svg{
 	box-shadow: 0px 6px 10px rgb(134, 134, 134);
 	background-color: white;
 	left: 50px;
-	bottom: 200px;
+	bottom: 50px;
 
 
 }
 .emojis-container span{
 	margin: auto;
 	padding: 5px ;
+	background-color: white;
 
 }
 
@@ -276,24 +280,22 @@ svg{
 
 	}
 
-
 	.chat-sidebar {
 		background: var(--dark-color-b);
-		color: #000000;
-		padding: 20px 20px 30px;
-		
+		color: #1b1b1b;
+		padding: 20px 20px 60px;
 		overflow-y: scroll;
+		height: 190px;
+
+		
 	}
+
+
 	.chat-container {
 		max-width: 1100px;
 		background: #fff;
 		margin: 0px;
 		overflow: hidden;
-	}
-	body {
-		font-size: 16px;
-		background: white;
-		margin: 0px;
 	}
 
 }

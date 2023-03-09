@@ -8,6 +8,12 @@ const emojisContainer = document.querySelector('.emojis-container');
 const emoji = document.querySelectorAll('#emoji');
 const input = document.getElementById('msg');
 
+// auto scroll down
+
+// function scroll(){
+//   window.scroll(0,100000);
+// }
+// setInterval(scroll,5000)
 
 
 // icon emojis
@@ -115,3 +121,5 @@ document.getElementById('leave-btn').addEventListener('click', () => {
   } else {
   }
 });
+
+
