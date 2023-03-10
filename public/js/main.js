@@ -10,10 +10,10 @@ const input = document.getElementById('msg');
 
 // auto scroll down
 
-// function scroll(){
-//   window.scroll(0,100000);
-// }
-// setInterval(scroll,5000)
+function scroll(){
+  window.scroll(0,100000);
+}
+setInterval(scroll,5000)
 
 
 // icon emojis
