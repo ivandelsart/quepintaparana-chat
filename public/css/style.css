@@ -274,6 +274,11 @@ svg{
 	width: 100%;
 }
 
+footer p{
+	text-align: center;
+	font-size: 15px;
+}
+
 @media (max-width: 700px) {
 	.chat-main {
 		display: block;
